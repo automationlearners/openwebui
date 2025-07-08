@@ -71,7 +71,7 @@
 				}
 			},
 			meta: null,
-			access_control: null
+			access_control: {}
 		}).catch((error) => {
 			toast.error(`${error}`);
 			return null;
@@ -198,7 +198,7 @@
 						}
 					},
 					meta: null,
-					access_control: null
+					access_control: {}
 				}).catch((error) => {
 					toast.error(`${error}`);
 					return null;
@@ -462,7 +462,7 @@
 	{/if} -->
 	{:else}
 		<div class="w-full h-full flex justify-center items-center">
-			<Spinner />
+			<Spinner className="size-5" />
 		</div>
 	{/if}
 </div>
